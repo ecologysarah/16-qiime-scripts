@@ -70,8 +70,11 @@ do
 	mv ${SCRATCHPATH}/01-download/download${url}.zip ${SCRATCHPATH}/01-download/\${RUN}.zip
 
 	##Copy the data to long term storage
-	echo Copying \${RUN} to long term storage
-	##cp ${SCRATCHPATH}/01-download/\${RUN}.zip ${SAVEPATH}/\${RUN}.zip
+	if [ ${SAVEPATH+x} ]
+		then
+		echo Copying \${RUN} to long term storage
+		cp ${SCRATCHPATH}/01-download/\${RUN}.zip ${SAVEPATH}/\${RUN}.zip
+	fi
 
         ##Unzip the data
 	echo Unzipping \${RUN}
