@@ -13,7 +13,7 @@ project=""
 ##Set path to directory for saving files - do not include a trailing /
 ##SAVEPATH=/mnt/data/GROUP-yourgroup/yourusername/yourproject
 ##Set path to working directory on scratch - do not include a trailing /
-SCRATCHPATH=/mnt/scratch/sbi9srj/WelshWater
+SCRATCHPATH=
 ##Paste in the URLs to your files here, e.g. DOWNLOADURL=("https://url1" "https://url2")
 DOWNLOADURL=("")
 #Set the slurm queue to use: defq for gomphus or iago, htc for hawk
