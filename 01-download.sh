@@ -91,7 +91,7 @@ do
         chmod u+x ${scriptName}
 
         ## submit the script to the compute queue
-#        slurmids="${slurmids}:$(sbatch --parsable ${scriptName})"
+        slurmids="${slurmids}:$(sbatch --parsable ${scriptName})"
 
 done
 
