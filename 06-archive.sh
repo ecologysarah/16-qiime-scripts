@@ -22,7 +22,7 @@ runTime="05:00:00"
 scriptBase="06-archive"
 
 ##Create the slurm script
-scriptName=${myDir}/temp/${scriptBase}.sh
+scriptName=${scriptBase}.sh
 rm -rf ${scriptName} || true
 touch ${scriptName}
 
